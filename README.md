@@ -3,9 +3,10 @@
 ![Example of Exported Chat](example.png)
 
 ## Introduction
-I want to export my Microsoft Teams messages. Despite being both a dominant product in the market segment and run by a trillion dollar company, Teams doesn't have a native way for end users to export messages for work or school accounts.
+Despite being both a dominant product in the market segment and run by a trillion dollar company, Microsoft Teams doesn't have a native way for end users to export their chat history.
 
-The repository contains a PowerShell script that allows you to export your Microsoft Teams chat conversations, in HTML format, to your local disk.
+## Purpose
+Efficiently export Microsoft Teams (Work or School) user's chat conversations, in HTML format, to local disk, using PowerShell v7.
 
 ## Important
 If you are using Microsoft Teams with a personal Microsoft account, you can simply export your chats and other data with https://go.microsoft.com/fwlink/?linkid=2128346. This guide is for people using Microsoft Teams with work or school accounts.
