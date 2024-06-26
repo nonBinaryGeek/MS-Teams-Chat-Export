@@ -8,8 +8,8 @@ Despite being both a dominant product in the market segment and run by a trillio
 ## Purpose
 Efficiently export Microsoft Teams (Work or School) user's chat conversations, in HTML format, to local disk, using PowerShell v7.
 
-## Important
-If you are using Microsoft Teams with a personal Microsoft account, you can simply export your chats and other data with https://go.microsoft.com/fwlink/?linkid=2128346. This guide is for people using Microsoft Teams with work or school accounts.
+> [!WARNING]
+> If you are using Microsoft Teams with a personal Microsoft account, you can simply export your chats and other data with https://go.microsoft.com/fwlink/?linkid=2128346. This guide is for people using Microsoft Teams with work or school accounts.
 
 ## Advantages
 Compared to other repos or methods that strive to achieve the same goal, [this method](#credit) is better in some respects:
