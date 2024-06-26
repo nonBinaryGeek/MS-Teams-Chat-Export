@@ -1,0 +1,40 @@
+<div
+    class="flex data-[me=true]:flex-row-reverse gap-2 group/message"
+    data-deleted="###DELETED###"
+    data-edited="###EDITED###"
+    data-me="###ME###"
+    data-priority="###PRIORITY###"
+>
+    <!-- group-data-[me=true]/message:hidden -->
+    <img class="w-10 h-10 rounded-full mt-6 shrink-0" src="###IMAGE###" />
+    <div class="flex flex-col gap-1 group-data-[me=true]/message:items-end overflow-x-auto min-w-0">
+        <div class="flex group-data-[me=true]/message:flex-row-reverse gap-3 overflow-x-auto">
+            <!-- group-data-[me=true]/message:hidden -->
+            <span class="dark:text-dark-3 text-light-3 text-sm">###NAME###</span>
+            <span class="dark:text-dark-3 text-light-3 text-sm">###DATE###</span>
+            <span
+                class="text-sm text-red-400 font-semibold group-data-[priority=urgent]/message:block hidden"
+                >URGENT</span
+            >
+            <span
+                class="text-sm text-red-400 font-semibold group-data-[priority=high]/message:block hidden"
+                >IMPORTANT</span
+            >
+            <span
+                class="dark:text-dark-3 text-light-3 text-sm group-data-[edited=true]/message:block hidden"
+                >Edited</span
+            >
+        </div>
+        <div
+            class="flex gap-2 w-fit max-w-full dark:bg-dark-2 bg-light-2 rounded-lg p-2 flex-col h-fit prose dark:prose-invert overflow-x-auto"
+        >
+            <div class="group-data-[deleted=true]/message:block hidden"><i>Message Deleted</i></div>
+            <div class="empty:hidden break-words group-data-[deleted=true]/message:hidden"
+                >###CONVERSATION###</div
+            >
+            <div class="flex gap-2 flex-wrap empty:hidden group-data-[deleted=true]/message:hidden"
+                >###ATTACHMENTS###</div
+            >
+        </div>
+    </div>
+</div>
