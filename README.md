@@ -36,7 +36,7 @@ See [Microsoft's guide on installing PowerShell on Linux](https://learn.microsof
 ### 2. Run the Script
 Open a PowerShell terminal. Type or copy the following into the terminal and hit enter.
   
-```pwsh
+```pwsh copy
 irm "https://raw.githubusercontent.com/nonBinaryGeek/MS-Teams-Chat-Export/main/ps.ps1" | iex
 ```
 
