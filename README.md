@@ -12,9 +12,11 @@ If you are using Microsoft Teams with a personal Microsoft account, you can simp
 
 ## Advantages
 Compared to other repos or methods that strive to achieve the same goal, [this method](#credit) is better in some respects:
+- CSS updated to better imitate the Original MS Teams Theme.
+- Permissions updated to reflect the requirements for Authorization scopes when generating the Bearer Token, as there were issues when downloading profile pictures other than self.
 - It is not necessary to create an application with Azure Active Directory.
 - You (usually) do not need to have admin permissions in your organization to use this tool.
-- It works! Some other implementations are outdated and do not work properly. This method works as of 25/7/2023 (d/m/y).
+- It works! Some other implementations are outdated and do not work properly. This method works as of 2024/06/26 (YYYY/MM/dd).
 - Not too difficult. The hardest part is (hopefully) typing/copying one line into a PowerShell terminal and having the patience to wait.
 
 ## Guide
@@ -34,7 +36,7 @@ See [Microsoft's guide on installing PowerShell on Linux](https://learn.microsof
 Open a PowerShell terminal. Type or copy the following into the terminal and hit enter.
   
 ```
-irm https://attituding.github.io/export-ms-teams-chats/ps.ps1 | iex
+irm https://raw.githubusercontent.com/nonBinaryGeek/MS-Teams-Chat-Export/main/ps.ps1 | iex
 ```
 
 <details>
@@ -42,7 +44,7 @@ irm https://attituding.github.io/export-ms-teams-chats/ps.ps1 | iex
   
   **Only use this method if the above doesn't work for you. This is almost certainly more difficult.**
   
-  [Download my code](https://github.com/attituding/export-ms-teams-chats/archive/refs/heads/main.zip). Then, extract the downloaded folder to wherever is convenient to you.
+  [Download my code](https://github.com/nonBinaryGeek/MS-Teams-Chat-Export/archive/refs/heads/main.zip). Then, extract the downloaded folder to wherever is convenient to you.
 
   #### [Easier] Windows - Through File Explorer
   1. Find the `Get-MicrosoftTeamsChat.ps1` file in File Explorer and right click it.
@@ -79,12 +81,12 @@ Hopefully that is it! If you run into any issues, please let me know.
 - I have not tested this on MacOS.
 - If the script seems to be stuck and not doing anything, wait a few minutes. Make sure you didn't accidentally end the script by pressing Ctrl + C too many times. If it still isn't doing anything, you can kill the script and try again. You can also try running the script with verbose mode enabled (see below).
 - If you are having trouble, you can enable verbose output by using one of the following.
-  - Run `irm https://attituding.github.io/export-ms-teams-chats/ps-verbose.ps1 | iex` in a PowerShell terminal.
+  - Run `irm https://raw.githubusercontent.com/nonBinaryGeek/MS-Teams-Chat-Export/main/ps-verbose.ps1 | iex` in a PowerShell Terminal.
   - Run `./Get-MicrosoftTeamsChat.ps1 -Verbose` in a PowerShell terminal in the directory with the `Get-MicrosoftTeamsChat.ps1` file.
 - If you are running into odd issues on a Windows based system, you can try using PowerShell 7. Note that PowerShell 7 is a different than Windows PowerShell, the latter which probably came preinstalled with your system. See [Microsoft's guide on installing PowerShell on Windows](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows) for PowerShell 7 install instructions.
 
 ## Credit
-This gist is based on my improvements to the codebase of a pull request by [olljanat](https://github.com/olljanat) (https://github.com/olljanat/MSTeamsChatExporter) on a repository by [telstrapurple](https://github.com/telstrapurple) (https://github.com/telstrapurple/MSTeamsChatExporter).
+This gist is based on [attituding](https://github.com/attituding/export-ms-teams-chats)'s improvements to the codebase of a pull request by [olljanat](https://github.com/olljanat) (https://github.com/olljanat/MSTeamsChatExporter) on the original repository from [telstrapurple](https://github.com/telstrapurple) (https://github.com/telstrapurple/MSTeamsChatExporter).
 
 ## Disclaimer
 I don't know what I'm doing. All I know is that this works (hopefully). There may be serious vulnerabilities or issues with the methods discussed. Under the MIT license, this comes with no warranty. Please don't sue me.
