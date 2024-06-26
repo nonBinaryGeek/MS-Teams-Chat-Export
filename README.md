@@ -86,7 +86,7 @@ Hopefully that is it! If you run into any issues, please let me know.
 - If you are running into odd issues on a Windows based system, you can try using PowerShell 7. Note that PowerShell 7 is a different than Windows PowerShell, the latter which probably came preinstalled with your system. See [Microsoft's guide on installing PowerShell on Windows](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows) for PowerShell 7 install instructions.
 
 ## Credit
-This gist is based on [attituding](https://github.com/attituding/export-ms-teams-chats)'s improvements to the codebase of a pull request by [olljanat](https://github.com/olljanat) (https://github.com/olljanat/MSTeamsChatExporter) on the original repository from [telstrapurple](https://github.com/telstrapurple) (https://github.com/telstrapurple/MSTeamsChatExporter).
+This gist is based on [attituding](https://github.com/attituding/export-ms-teams-chats)'s improvements to the codebase of a pull request by [olljanat](https://github.com/olljanat/MSTeamsChatExporter) on the original repository from [telstrapurple](https://github.com/telstrapurple/MSTeamsChatExporter).
 
 ## Disclaimer
 I don't know what I'm doing. All I know is that this works (hopefully). There may be serious vulnerabilities or issues with the methods discussed. Under the MIT license, this comes with no warranty. Please don't sue me.
